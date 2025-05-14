@@ -6,14 +6,15 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install -y \
     build-essential \
-    ninja-build \
+    ccache \
     clang \
     cmake \
     gdb \
-    lldb \
     git \
-    qtbase5-dev \
-    python3-dev \
     libpython3-dev \
+    lldb \
+    ninja-build \
     pkg-config \
+    python3-dev \
+    qtbase5-dev \
 && rm -rf /var/lib/apt/lists/*
