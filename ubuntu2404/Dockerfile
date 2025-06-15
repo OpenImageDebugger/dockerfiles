@@ -11,12 +11,10 @@ RUN apt update && apt install -y \
     cmake \
     gdb \
     git \
-    libprotobuf-dev \
     libpython3-dev \
     lldb \
     ninja-build \
     pkg-config \
-    protobuf-compiler \
     python3-dev \
     qtbase5-dev \
 && rm -rf /var/lib/apt/lists/*
